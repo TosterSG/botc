@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+   <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 user-scalable=no">
+         <title>Agar.io</title>
+         <script src="lib/p5.min.js"></script>
+         <script src="lib/p5.dom.js"></script>
+         <script src="lib/p5.sound.js"></script>
+         <script src="js/blob.js"></script>
+         <script src="js/engine.js"></script>
+         <script src="lib/fastclick.js"></script>
+         
+         <script type="text/javascript">
+            window.addEventListener('load', function()       {
+    new FastClick(document.body);
+}, false);
+         </script>
+
+         <style type="text/css">
+            * {
+               padding: 0;
+               margin: 0;
+            }
+            canvas {
+              //display: none;
+              z-index: 1;
+              position: relative;
+            }
+            body {
+            }
+            .start {
+               width: 60%;
+               margin:20% auto;
+               background: #555;
+               margin-top: 3%;
+               border-radius: 3px;
+               box-shadow: 0 0 1px #000;
+               z-index: 2;
+               position: relative;
+            }
+            .nickname {
+               height: 30px;
+               background: #ececec;
+               border: 1px solid #ccc;
+               padding: 3px;
+               margin-top: 30px;
+               border-radius: 3px;
+               width: 50%;
+            }
+            .btn-start {
+               min-width: 20%;
+               height: 30px;
+               background: #fff;
+               border: 1px solid #eee;
+               border-radius: 3px;
+               margin-top: 10px;
+               color: #666;
+               margin-bottom: 25px;
+               padding: 2px;
+            }
+            .btn-start:hover {
+               box-shadow: 0 0 1px #000;
+            }
+            h1 {
+               
+            }
+            .btn-start:click .canvas {
+               display: block;
+            }
+            .btn-start:click .start {
+               display: none;
+            }
+            
+         </style>
+   </head>
+   <body>
+      <!--<center><h1>Битва Клеток</h1></center>
+      <div class="start">
+         <center>
+         <input class="nickname" type="text" placeholder="Введи ник"><br>
+            <button class="btn-start" onclick="require 'js/blob.js'; require 'js/engine.js'">Играть</button>
+         </center>
+      </div>-->
+   </body>
+</html>
